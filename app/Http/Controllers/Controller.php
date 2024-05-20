@@ -12,11 +12,11 @@ class Controller extends BaseController
 {
     public function AddUser(Request $req)
     {
-        // $req->validate([
-            // 'username' => 'required|string|max:255',
-            // 'useremail' => 'required|email|max:255',
-            // 'userage' => 'required|integer|min:0',
-        // ]);
+        $req->validate([
+            'username' => 'required|string|max:255',
+            'useremail' => 'required|email|max:255',
+            'userage' => 'required|integer|min:0',
+        ]);
         return $req->all();
 
         // Assuming you will add logic here to handle the validated data

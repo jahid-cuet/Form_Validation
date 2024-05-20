@@ -12,13 +12,13 @@
             <div class="col-12 col-md-8 col-lg-6">
                 <h1>  Add New User </h1>
 
-                {{-- @if($errors->any())
+                @if($errors->any())
                 <ul class="alert alert-danger">
                     @foreach ($errors->all() as $error)
                         <li>{{$error}}</li>
                     @endforeach
                 </ul>
-                @endif --}}
+                @endif
 
                 <form action="{{route('addUser')}}" method="POST">
                     @csrf
